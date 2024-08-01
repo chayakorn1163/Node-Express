@@ -12,7 +12,8 @@ console.log("immediate logging");
 // สร้าง promise
 const consnect = true;
 const url1 = "chayakon/files.json";
-    function downloading(url) {
+const url2 = "chayakon/files.json";
+   /* function downloading(url) {
         return new Promise(function (resolve, reject) {
             console.log(`กำลังดาวโหลด ${url}`)
             setTimeout(() => {
@@ -21,14 +22,16 @@ const url1 = "chayakon/files.json";
             } else {
                 reject(`เกิดข้อผิดพลาด`);
             }
-            }, 3000);
+            }, 5000);
         });
         }
 
-downloading(url1).then((result) => {
+downloading(url1).then(function(result){
     console.log(result);
-    }).catch((error) => {
-        console.log(error);
-    }).finally(()=>{
-        console.log("จบการทำงาน");
+    downloading(url2).then(function(result){
+        console.log(result);
     })
+})*/
+
+
+
